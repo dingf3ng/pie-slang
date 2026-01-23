@@ -18,7 +18,7 @@ export interface TacticalResult {
     context: Context;
     message: string;
 }
-export declare function addDefineTacticallyToContext(ctx: Context, name: string, location: Location, tactics: Tactic[]): Perhaps<TacticalResult>;
+export declare function addDefineTacticallyToContext(ctx: Context, name: string, location: Location, tactics: Tactic[], verbose?: boolean): Perhaps<TacticalResult>;
 export declare function contextToEnvironment(ctx: Context): Environment;
 export declare function getInductiveType(ctx: Context, where: Location, name: string): Perhaps<InductiveDatatypeBinder>;
 export declare const initCtx: Context;
