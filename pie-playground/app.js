@@ -2,11 +2,11 @@ import { PieLanguageClient, registerPieLanguage } from './lsp/lsp-client-bundle.
 
 // Extend Window interface to include Monaco globals
 const examples = {
-  'Hello World': `(claim zero Nat)
-(define zero zero)
+  'Hello World': `(claim MyZero Nat)
+(define MyZero zero)
 
 (claim add1zero Nat)
-(define add1zero (add1 zero))`,
+(define add1zero (add1 MyZero))`,
 
   'Natural Number Addition': `(claim +
   (→ Nat Nat Nat))
